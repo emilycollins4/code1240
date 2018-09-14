@@ -20,10 +20,10 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZW10Y29sbGlucyIsImEiOiJjam0wMjZnazIyOGJvM2tvZ
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
-    center: [151.004105, -33.813002],
-    zoom: 9,
-    pitch: 45,
-	bearing: -17.6,
+    center: [143, -30],
+    zoom: 5,
+    pitch: 40,
+	bearing: 20,
 });
 
 map.on('load', function() {
@@ -44,15 +44,15 @@ map.on('load', function() {
 			},
 
             'fill-extrusion-height': {
-			'property' : 'differemce',
+			'property' : 'difference',
 			"stops":[
 			[0.2, 0],
-			[1, 5000]
+			[1, 65535]
 			]
 			},
 
 
-            'fill-extrusion-opacity': 1
+            'fill-extrusion-opacity': 0.9
         }
     });
 });
