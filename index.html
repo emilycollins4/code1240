@@ -36,7 +36,7 @@ map.on('load', function() {
         },
         'paint': {
             'fill-extrusion-color': {
-			'property' : 'm_tot',
+			'property' : 'difference',
 			"stops":[
 				[0,'white'],
 				[1000, 'purple']
@@ -44,7 +44,7 @@ map.on('load', function() {
 			},
 
             'fill-extrusion-height': {
-			'property' : 'difference',
+			'property' : 'm_tot',
 			"stops":[
 			[0.2, 0],
 			[1, 5000]
