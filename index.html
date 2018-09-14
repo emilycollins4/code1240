@@ -21,16 +21,16 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
     center: [151.004105, -33.813002],
-    zoom: 5,
+    zoom: 9,
     pitch: 45,
 	bearing: -17.6,
 });
 
 map.on('load', function() {
     map.addLayer({
-        'id': 'data',
-        'type': 'fill-extrusion',
-        'source': {
+        "id": "data",
+        "type": "fill-extrusion",
+        "source": {
             'type': 'geojson',
             'data': data
         },
@@ -52,7 +52,7 @@ map.on('load', function() {
 			},
 
 
-            'fill-extrusion-opacity': 0.9
+            'fill-extrusion-opacity': 1
         }
     });
 });
